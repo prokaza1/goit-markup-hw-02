@@ -7,12 +7,23 @@
   --btn-bg-color: #f4f4fd;
   --btn-sol-color: #e7e9fc;
   --btn-cursor: pointer;
+  --text-color: #434455;
+  --text-color-hero: #ffffff;
+  --color-tx-ourworkers: #2e2f42;
 }
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+  background: #ffffff;
 }
 
 .logo-web {
@@ -35,74 +46,58 @@ body {
 
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--color-tx-ourworkers);
 }
-.social-link {
+.navigation-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.33;
-  color: #2e2f42;
+  color: var(--color-tx-ourworkers);
 
   letter-spacing: 0.02em;
 }
-.link-studio:hover {
+.navigation-link:hover {
   color: #404bbf;
 }
-.link-portfolio:hover {
-  color: #404bbf;
-}
-.link-contacts:hover {
-  color: #404bbf;
-}
-.contacts-mail {
+
+.contacts-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  width: 153px;
-  height: 24px;
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
-.contacts-tel {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-
-  letter-spacing: 0.02em;
-  color: #434455;
-}
-.contacts-tel:hover,
-.contacts-mail:hover {
+.contacts-link:hover {
   color: #404bbf;
 }
 
 /* main-content */
-.title {
-  background: #2e2f42;
+.hero {
+  background: var(--color-tx-ourworkers);
 }
-.text-title {
+.hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
 
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--text-color-hero);
 }
-.button-title {
+.hero-button {
   cursor: pointer;
   background: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--text-color-hero);
 
   letter-spacing: 0.04em;
 }
-.button-title:hover {
+.hero-button:hover {
   background: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -110,28 +105,21 @@ body {
 /*-----------Strengths--------------*/
 
 .strengths-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-.strengths-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-tx-ourworkers);
 }
-.strengths-list-text {
+.strengths-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
 /* --------------WHAT ARE WE DOING---------- */
 .our-work-title {
@@ -140,6 +128,9 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+img {
+  display: block;
 }
 /* -------------------OUR TEAM-------------- */
 .team-section {
@@ -152,26 +143,26 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.name-workers {
+.team-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-tx-ourworkers);
 }
-.workers-position {
+.team-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
 /* -----------FOOTER------------- */
-.footer-description {
-  background: #2e2f42;
+.footer {
+  background: var(--color-tx-ourworkers);
 }
 .logo-studio-footer {
   font-family: var(--logo-font);
@@ -183,7 +174,7 @@ body {
   text-transform: uppercase;
   color: #f4f4fd;
 }
-.text-footer {
+.footer-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -194,15 +185,14 @@ body {
 }
 /* ----------PORTFOLIO.HTML--------------- */
 
-.button-all {
+.button-icon {
   cursor: var(--btn-cursor);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   background: var(--btn-bg-color);
-  width: 69px;
-  height: 48px;
+  padding: 12px 24px;
   border: 1px solid var(--btn-sol-color);
   border-radius: 4px;
 
@@ -210,71 +200,7 @@ body {
   color: var(--btn-text-color);
 }
 
-.button-web-site {
-  cursor: var(--btn-cursor);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  background: var(--btn-bg-color);
-  width: 116px;
-  height: 48px;
-  border: 1px solid var(--btn-sol-color);
-  border-radius: 4px;
-  letter-spacing: 0.04em;
-  color: var(--btn-text-color);
-}
-.button-app {
-  cursor: var(--btn-cursor);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-
-  background: var(--btn-bg-color);
-  width: 78px;
-  height: 48px;
-  border: 1px solid var(--btn-sol-color);
-  border-radius: 4px;
-  letter-spacing: 0.04em;
-  color: var(--btn-text-color);
-}
-.button-design {
-  cursor: var(--btn-cursor);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-
-  background: var(--btn-bg-color);
-  width: 101px;
-  height: 48px;
-  border: 1px solid var(--btn-sol-color);
-  border-radius: 4px;
-  letter-spacing: 0.04em;
-  color: var(--btn-text-color);
-}
-.button-marketing {
-  cursor: var(--btn-cursor);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-
-  background: var(--btn-bg-color);
-  width: 126px;
-  height: 48px;
-
-  border: 1px solid var(--btn-sol-color);
-  border-radius: 4px;
-  letter-spacing: 0.04em;
-  color: var(--btn-text-color);
-}
-.button-web-site:hover,
-.button-marketing:hover,
-.button-design:hover,
-.button-app:hover,
-.button-all:hover {
+.button-icon:hover {
   background: #404bbf;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -290,20 +216,20 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.name-of-our-work {
+.cards-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-tx-ourworkers);
 }
-.type-of-work {
+.cards-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
 
-  color: #434455;
+  color: var(--text-color);
 }
