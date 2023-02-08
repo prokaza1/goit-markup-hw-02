@@ -11,6 +11,9 @@
   --text-color-hero: #ffffff;
   --color-tx-ourworkers: #2e2f42;
 }
+* {
+  box-sizing: border-box;
+}
 .list {
   list-style: none;
 }
@@ -59,7 +62,9 @@ body {
 .navigation-link:hover {
   color: #404bbf;
 }
-
+.contacts {
+  font-style: normal;
+}
 .contacts-link {
   font-weight: 400;
   font-size: 16px;
@@ -94,7 +99,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color-hero);
-
+  padding: 16px 32px;
   letter-spacing: 0.04em;
 }
 .hero-button:hover {
@@ -128,6 +133,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--color-tx-ourworkers);
 }
 img {
   display: block;
@@ -142,6 +148,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--color-tx-ourworkers);
 }
 .team-name {
   font-weight: 500;
